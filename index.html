@@ -74,10 +74,25 @@
                 
             <!-- Botão 1 -->
            <body>
-                 <a class="button-link" href="http://mpago.la/2ccVRdk">
-                  <button>Finalizar a Compra</button>
+                 <a class="button-link" href="https://www.example.com/pagina-de-finalizacao">
+                  <button>Pagar com o Cartão</button>
               </a>
             </body>
+            <h1>
+            <button onclick="copyText()">Pague com o PIX</button>
+            <script>
+              function copyText() {
+                const textToCopy = "67993440872";
+                const textarea = document.createElement("textarea");
+                textarea.value = textToCopy;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textarea);
+                alert("Texto copiado para a área de transferência!");
+              }
+            </script>
+            </h1>
             
           </div>
         </div>
